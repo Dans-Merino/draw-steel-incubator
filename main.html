@@ -1,36 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <header> 
-      <ul><li>Draw Steel character incubator</li><li>create new character</li><li>Save to file</li><li>powered by draw steel logo</li></ul></header>
-    <main>
-    </main>
-        <div>Character misc</div>
-        <div>Ability scores</div>
-        <div>Skills</div>
-        <div>Free strikes</div>
-        <div>Kit related stuff</div>
-        <div>Signature Ability</div>
-        <div>Heroic abilities</div>  
-        <div>Skills</div>
-        <div>Career</div>
-        <div>Ancestry</div>
-        <div>Culture</div>
-        <div>Class</div>
-        <div>Class related stuff</div>
-    </main>
-    <footer>
-      <p><mark class="page-title">Draw Steel character incubator</mark> is an independent product published under the DRAW STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions, LLC. </p>
-    </footer>
-	<script src="index.js"></script>
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>Draw Steel character incubator</li>
+      <li>create new character</li>
+      <li>Save to file</li>
+      <li>powered by draw steel logo</li>
+    </ul>
+  </header>
+  <main>
+  </main>
+  <div>
+    Character misc
+    <div>
+      Character: CoolName
+      Player: You
+      Career Title: The best
+      Ancestry: Human
+      Class: NoClass
+      Level: 0
+      Renow: 0
+    </div>
+    <div>
+      Career: Normal Person
+      Complication: Lots
+      Languages: English
+    </div>
+    <div>
+      Culture
+      <div>
+        Environment: Normal
+        Organization: Minimal
+        Upbringing: Coul'd be worst
+      </div>
+    </div>
+  </div>
+  <br>
+  <div>Mechanical Attributes
+    <div id="characteristics">
+      <div class="characteristic">
+        <div class="characteristic-name">MGT<title>Might</title>
+        </div>
+        <div class="characteristic-number">2</div>
+      </div>
+      <div class="characteristic">
+        <div class="characteristic-name">AGI<title>Agility</title>
+        </div>
+        <div class="characteristic-number">2</div>
+      </div>
+      <div class="characteristic">
+        <div class="characteristic-name">REA<title>Reason</title>
+        </div>
+        <div class="characteristic-number">1</div>
+      </div>
+      <div class="characteristic">
+        <div class="characteristic-name">INU<title>Intuition</title>
+        </div>
+        <div class="characteristic-number">0</div>
+      </div>
+      <div class="characteristic">
+        <div class="characteristic-name">PRS<title>Presence</title>
+        </div>
+        <div class="characteristic-number">-1</div>
+      </div>
+    </div>
+    <div>Life stuff
+      <div>Stamina: 10</div>
+      <div>Max: 10</div>
+      <div>Wounded: 5 <small>1/2 max</small></div>
+      <div>Recoveries: 10</div>
+      <div>Max: 10</div>
+      <div>Value: 5</div>
+    </div>
+    <div>other attributes
+      <div class="attribute">
+        <div class="attribute-name">Size</div>
+        <div class="attribute-number">1</div>
+      </div>
+      <div class="attribute">
+        <div class="attribute-name">Weight</div>
+        <div class="attribute-number">4</div>
+      </div>
+      <div class="attribute">
+        <div class="attribute-name">Reach</div>
+        <div class="attribute-number">1</div>
+      </div>
+      <div class="attribute">
+        <div class="attribute-name">Speed</div>
+        <div class="attribute-number">5</div>
+      </div>
+      <div class="attribute">
+        <div class="attribute-name">Stability</div>
+        <div class="attribute-number">3</div>
+      </div>
+    </div>
+    <div>victories</div>
+    <div><span id="heroic-resource">heroic resource:</span>0</div>
+
+  </div>
+  <div>Skills</div>
+  <div>Free strikes
+    <div class="free-strike ability-card">
+      <h1>Melee Free Strike</h1>
+      <span class="key">Keywords</span><span class="value">Attack, Melee, Weapon</span>
+      <span class="key">Distance</span><span class="value">Reach 1</span>
+      <span class="key">Type</span><span class="value">Action</span>
+      <span class="key">Targes</span><span class="value">1 creature or object</span>
+      <div class="power-roll">
+        <span class="power-roll-title">Power Roll + Characteriscts 2d10+2</span>
+        <div class="power-roll-chart"></div>
+      </div>
+    </div>
+    <div class="free-strike ability-card">
+      <h1>Ranged Free Strike</h1>
+      <span class="key">Keywords</span><span class="value">Attack, Ranged, Weapon</span>
+      <span class="key">Distance</span><span class="value">Ranged 5</span>
+      <span class="key">Type</span><span class="value">Action</span>
+      <span class="key">Targes</span><span class="value">1 creature or object</span>
+      <div class="power-roll">
+        <span class="power-roll-title">Power Roll + Characteriscts 2d10+2</span>
+        <div class="power-roll-chart"></div>
+      </div>
+    </div>
+  </div>
+  <div>Kit related stuff
+    <div class="ability-card kit">Kit
+      <div id="kit-info">
+        <span id="kit-name">Plain clothes</span>
+        <span id="kit-equipment">Equipment</span> White tee and jeans
+      </div>
+      <div id="kit-stats">
+        <span>Melee Weapon DMG+</span>
+        <span>Ranged Weapon DMG+</span>
+        <span>Magic Weapon DMG+</span>
+      </div>
+    </div>
+    <div class="ability-card signature-ability kit">Kit Signature ability</div>
+  </div>
+  <div class="ability-card signature-ability class">
+    <h1>Signature ability: Sloppy Haymaker</h1>
+    <span class="key">Keywords</span><span class="value">Attack, Melee, Weapon</span>
+    <span class="key">Distance</span><span class="value">Ranged 5</span>
+    <span class="key">Type</span><span class="value">Action</span>
+    <span class="key">Targes</span><span class="value">1 creature or object</span>
+    <div class="power-roll">
+      <span class="power-roll-title">Power Roll + Characteriscts 2d10+2</span>
+      <div class="power-roll-chart"></div>
+    </div>
+  </div>
+  <div>
+    <h1>Heroic abilitie: Bull rush</h1>
+    <span class="key">Keywords</span><span class="value">Attack, Ranged, Weapon</span>
+    <span class="key">Distance</span><span class="value">Ranged 5</span>
+    <span class="key">Type</span><span class="value">Action</span>
+    <span class="key">Targes</span><span class="value">1 creature or object</span>
+    <div class="power-roll">
+      <span class="power-roll-title">Power Roll + Characteriscts 2d10+2</span>
+      <div class="power-roll-chart"></div>
+    </div>
+  </div>
+  <div>Skills</div>
+  <div>Career</div>
+  <div>Ancestry</div>
+  <div>Culture</div>
+  <div>Class</div>
+  <div>Class related stuff</div>
+  </main>
+  <footer>
+    <p><mark class=" page-title">Draw Steel character incubator</mark> is an independent product published under the
+      DRAW
+      STEEL Creator License and is not affiliated with MCDM Productions, LLC. DRAW STEEL © 2024 MCDM Productions,
+      LLC.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+
+</body>
+
 </html>
