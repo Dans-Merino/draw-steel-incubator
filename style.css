@@ -1,0 +1,100 @@
+body {
+  grid-template-columns: 1fr 7fr 1fr;
+  ;
+}
+
+header > nav ul {
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: end !important;
+
+}
+
+header > nav h1 {
+  width: 35%;
+  display: block;
+  margin: 0;
+  position: fixed;
+
+}
+
+#character-misc {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+#character-misc > :first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  gap: 2em;
+}
+
+#characteristics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#stamina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#recoveries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  width: 33%;
+  min-width: 30em; 
+}
+
+#devil-features input{
+  padding: 0.45em;
+}
+
+.card::before {
+  height: 1%;
+  width: 50%;
+  box-shadow: -1px -1px 0 #FFF;
+  z-index: -1;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+}
+
+.card h1 {
+  font-size: 1.5em;
+}
+
+.card h1 span.ability-name{
+  font-size: 0.8em;
+}
+
+.ability-keywords {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.power-roll-chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+span.key {
+  font-weight: bold;
+  margin-right: 1em;
+}
