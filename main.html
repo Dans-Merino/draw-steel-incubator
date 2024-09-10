@@ -34,7 +34,7 @@
           <span>Character: CoolName</span><br>
           <span>Player: You</span><br>
           <span>Career Title: The best</span><br>
-          <span>Ancestry: Human</span>
+          <span>Ancestry: <span class="attrValue" data-id="ancestry">human</span></span>
         </div>
         <div>
           Class: NoClass<br>
@@ -65,36 +65,36 @@
           <div class="characteristic">
             <div class="characteristic-name"><abbr title="Might">MGT</abbr>
             </div>
-            <div class="characteristic-number">2</div>
+            <div data-id="might" class="characteristic-number">2</div>
           </div>
           <div class="characteristic">
             <div class="characteristic-name"><abbr title="Agility">AGI</abbr>
             </div>
-            <div class="characteristic-number">2</div>
+            <div data-id="agility" class="characteristic-number">2</div>
           </div>
           <div class="characteristic">
             <div class="characteristic-name"><abbr title="Reason">REA</abbr>
             </div>
-            <div class="characteristic-number">1</div>
+            <div data-id="reason" class="characteristic-number">1</div>
           </div>
           <div class="characteristic">
             <div class="characteristic-name"><abbr title="Intuition">INU</abbr>
             </div>
-            <div class="characteristic-number">0</div>
+            <div data-id="intuition" class="characteristic-number">0</div>
           </div>
           <div class="characteristic">
             <div class="characteristic-name"><abbr title="Presence">PRS</abbr>
             </div>
-            <div class="characteristic-number">-1</div>
+            <div data-id="presence" class="characteristic-number">-1</div>
           </div>
         </div>
         <div id="stamina">
-          <div>Stamina: 10</div>
+          <div>Stamina: <span data-id="stamina">10</span></div>
           <div>
             Max: 10 <br>
             Wounded: 5 <small>1/2 max</small></div>
           <div id="recoveries">
-            <div>Recoveries: 10</div>
+            <div>Recoveries: <span data-id="recoveries">10</span></div>
             <div>
               Max: 10 <br>
               Value: 5</div>
@@ -103,23 +103,23 @@
         <div id="attributes">
           <div class="attribute">
             <div class="attribute-name">Size</div>
-            <div class="attribute-number">1</div>
+            <div data-id="size" class="attribute-number">1</div>
           </div>
           <div class="attribute">
             <div class="attribute-name">Weight</div>
-            <div class="attribute-number">4</div>
+            <div data-id="wight" class="attribute-number">4</div>
           </div>
           <div class="attribute">
             <div class="attribute-name">Reach</div>
-            <div class="attribute-number">1</div>
+            <div data-id="reach" class="attribute-number">1</div>
           </div>
           <div class="attribute">
             <div class="attribute-name">Speed</div>
-            <div class="attribute-number">5</div>
+            <div data-id="speed" class="attribute-number">5</div>
           </div>
           <div class="attribute">
             <div class="attribute-name">Stability</div>
-            <div class="attribute-number">3</div>
+            <div data-id="stability" class="attribute-number">3</div>
           </div>
           <div>victories</div>
           <div><span id="heroic-resource">heroic resource:</span>0</div>
@@ -222,32 +222,33 @@
   </footer>
 
   <dialog id="character-incubator-wizard">
-    <form>
-      <label for="character-name">Character Name</label> <input type="text" id="character-name" name="character-name">
-      <label for="player-name">Player Name</label> <input type="text" id="player-name" name="player-name">
-      <p>Choose an Ancestry</p>
-      <select id="ancestry">
-        <option value="devil">Devil</option>
-        <option value="dragon knight">Dragon knight</option>
-        <option value="dwarf">Dwarf</option>
-        <option value="wode elf">Wode Elf</option>
-        <option value="high elf">High Elf</option>
-        <option value="hakaan">Hakaan</option>
-        <option value="human">Human</option>
-        <option value="memonek">Memonek</option>
-        <option value="orc">Orc</option>
-        <option value="polder">Polder</option>
-        <option value="revenant">Revenant</option>
-        <option value="time Raider">Time Raider</option>
-      </select>
-      <div id="ancestry-benefits">
-        <p>Benefits</p>
-        <ul id="benefits-list">
-        </ul>
-      </div>
-      <button id="dialog-exit">Close</button>
-      <button id="dialog-next">Next</button>
-    </form>
+
+    <label for="character-name">Character Name</label> <input type="text" id="character-name" name="character-name">
+    <label for="player-name">Player Name</label> <input type="text" id="player-name" name="player-name">
+    <p>Choose an Ancestry</p>
+    <select id="ancestry">
+      <option value="" disabled selected>Ancestry</option>
+      <option value="devil">Devil</option>
+      <option value="dragon knight">Dragon knight</option>
+      <option value="dwarf">Dwarf</option>
+      <option value="wode elf">Wode Elf</option>
+      <option value="high elf">High Elf</option>
+      <option value="hakaan">Hakaan</option>
+      <option value="human">Human</option>
+      <option value="memonek">Memonek</option>
+      <option value="orc">Orc</option>
+      <option value="polder">Polder</option>
+      <option value="revenant">Revenant</option>
+      <option value="time Raider">Time Raider</option>
+    </select>
+    <div id="ancestry-benefits">
+      <p>Benefits</p>
+      <ul id="benefits-list">
+      </ul>
+    </div>
+    <button id="dialog-exit">Close</button>
+    <button id="dialog-next">Next</button>
+
   </dialog>
   <script src="index.js"></script>
 

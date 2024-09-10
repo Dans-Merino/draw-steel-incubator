@@ -14,7 +14,7 @@ header > nav h1 {
   width: 35%;
   display: block;
   margin: 0;
-  position: fixed;
+  position: absolute;
 
 }
 
@@ -27,6 +27,7 @@ header > nav h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 
 #cards {
   display: flex;
@@ -60,7 +61,7 @@ header > nav h1 {
   min-width: 30em; 
 }
 
-#devil-features input{
+#extra-ancestry-features input{
   padding: 0.45em;
 }
 
@@ -97,4 +98,13 @@ header > nav h1 {
 span.key {
   font-weight: bold;
   margin-right: 1em;
+}
+
+
+/* WIZARD */
+
+dialog#character-incubator-wizard{
+  width: 50%;
+  height: 75%;
+  max-width: 50%;
 }
